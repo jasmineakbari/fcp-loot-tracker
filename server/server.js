@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const mongoose = require('mongoose');
+const jwt = require('jsonwebtoken');
 const PlayerModel = require('./models/Players');
 const UserModel = require('./models/User');
 const Role = require('./models/Role');
@@ -50,6 +51,14 @@ app.post('/add-player-info', async (req, res) => {
 });
 
 // User routes
+
+app.get('/login', (req, res) => {
+
+});
+
+app.post('/sign-up', (req, res) => {
+
+});
 
 
 
