@@ -1,16 +1,13 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-var corsOptions = {
-    origin: "http://localhost:3002"
-  };
 const app = express();
 const mongoose = require('mongoose');
 const PlayerModel = require('./models/Players');
 const UserModel = require('./models/User');
 const Role = require('./models/Role');
 
-app.use(cors(corsOptions));
+app.use(cors()); 
 // allows json in requests
 app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
@@ -54,11 +51,7 @@ app.post('/add-player-info', async (req, res) => {
 
 // User routes
 
-// POST	/api/auth/signup
-// POST	/api/auth/signin
-// GET	/api/test/all
-// GET	/api/test/user
-// GET	/api/test/admin
+
 
 // create local express connection
 const PORT = process.env.PORT || 3001;
