@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const PlayerSchema = new mongoose.Schema({
-    char_first_name: {
+const CharacterSchema = new mongoose.Schema({
+    first_name: {
         type: String,
         required: true,
     },
-    char_last_name: {
+    last_name: {
         type: String,
         required: true,
     },
@@ -27,6 +27,6 @@ const PlayerSchema = new mongoose.Schema({
     }
 })
 
-const PlayerModel = mongoose.model('players', PlayerSchema);
+const CharacterModel = mongoose.model('Character', CharacterSchema);
 
-module.exports = PlayerModel;
+module.exports = CharacterModel;

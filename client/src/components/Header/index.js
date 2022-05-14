@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/fcp-logo.png'
-import './index.css';
+import './index.scss';
 // import Auth from '../../utils/auth';
 
 const Header = () => {

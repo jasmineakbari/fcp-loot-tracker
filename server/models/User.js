@@ -16,9 +16,13 @@ const UserSchema = new mongoose.Schema({
     roles: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Role"
+    }],
+    char: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Character"
     }]
 })
 
-const UserModel = mongoose.model('user', UserSchema);
+const UserModel = mongoose.model('User', UserSchema);
 
 module.exports = UserModel;
