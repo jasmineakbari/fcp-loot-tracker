@@ -1,11 +1,13 @@
 import './App.css';
-import { useState } from "react";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <div className="playerInfoDisplay"></div>
-    </div>
+    <Router>
+      <Header />
+    </Router>
   );
 }
 
